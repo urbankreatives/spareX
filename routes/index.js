@@ -163,7 +163,7 @@ router.post('/checkout',isLoggedIn,  function(req, res, next) {
 
 //enterprise A
 
-router.get('/paynow',isLoggedIn, function(req,res){
+router.get('/paynow', function(req,res){
     var m = moment()
   
     var date = moment().toString();
