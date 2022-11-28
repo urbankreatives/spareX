@@ -173,7 +173,7 @@ router.get('/paynow', function(req,res){
     // Create instance of Paynow class
     let paynow = new Paynow(14808, "e351cf17-54bc-4549-81f2-b66feed63768");
     var amount , pollCount, duration
-    Subscriptions.find({},function(err,docs){
+
      // amount = docs[0].startup
      amount = 100
    
@@ -216,7 +216,7 @@ router.get('/paynow', function(req,res){
       }
     })
     })
-  })
+
   
 
 module.exports = router;
