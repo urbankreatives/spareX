@@ -3259,7 +3259,7 @@ CONTACT US
                                             </h5>
 
                                             <div class="price">
-                                                Rs. 390.00
+                                           ${{this.item.price}}
                                             </div>
                                             <dl>
                                                 <div class="product-option">
@@ -3289,7 +3289,7 @@ CONTACT US
 
                                         </div>
 
-                                        <a href="/cart/change?line=1&amp;quantity=0" class="cart__remove close_icon">
+                                        <a href="/remove/{{this.item._id}}" class="cart__remove close_icon">
               <span class="dt-sc-btn close-icon"></span>
             </a>
 
@@ -3345,7 +3345,17 @@ CONTACT US
 
                                         </div>
 
-                                        <div id="shipping-calculator">
+
+                                          <div class="cart_btn">
+     
+                                                             <button   type="submit" class="checkout-button button alt wc-forward">
+	 paynow</button>
+
+                                                               
+
+                                        </div>
+
+                                      <!--  <div id="shipping-calculator">
                                             <p class="dt-sc-btn" onclick="shippingCall()">Get shipping estimates <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
   
 <path d="M96.3,24.9c-2.3-2.2-5.8-2.1-8,0.1L51.6,63L11.5,24.9c-2.3-2.2-5.9-2.1-8,0.2c-2.2,2.3-2.1,5.9,0.2,8l44.2,42
@@ -3605,7 +3615,7 @@ CONTACT US
                                                 <p class="field">
                                                     <input type="button" class="get-rates btn button" value="Calculate shipping" />
                                                 </p>
-                                            </div>
+                                            </div>-->
                                             <div id="wrapper-response"></div>
                                         </div>
 

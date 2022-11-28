@@ -7,7 +7,7 @@ var Product = require('../models/product');
 var Order = require('../models/order');
 const Poll =require('../models/poll');
 
-//const { Paynow } = require("paynow");
+const { Paynow } = require("paynow");
 
 var path = require('path');
 
@@ -142,7 +142,7 @@ router.post('/checkout',isLoggedIn,  function(req, res, next) {
        
             console.log(err.message)
             console.log(req.body.slot,'ma1')
-            return res.redirect('/cart');
+            return res.redirect('/');
         }
         var order = new Order({
          
@@ -162,7 +162,7 @@ router.post('/checkout',isLoggedIn,  function(req, res, next) {
 
 
 //enterprise A
-/*
+
 router.get('/paynow',isLoggedIn, function(req,res){
     var m = moment()
   
@@ -217,7 +217,7 @@ router.get('/paynow',isLoggedIn, function(req,res){
     })
     })
   })
-  */
+  
 
 module.exports = router;
 
