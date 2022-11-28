@@ -120,7 +120,7 @@ router.get('/add-to-cart1/:id', function(req, res, next) {
 
 
 
-router.post('/checkout',isLoggedIn,  function(req, res, next) {
+router.post('/checkout',  function(req, res, next) {
     if (!req.session.cart) {
         return res.redirect('/cart');
     }

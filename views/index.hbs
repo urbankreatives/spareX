@@ -756,7 +756,13 @@
 
             <div data-section-id="header" data-section-type="header-section" data-header-section>
                 <header id="header">
-                    <section class="text-center announcement-bar   hide-mobile">Free Delivery
+                    <section class="text-center announcement-bar   hide-mobile">                      <div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+        <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
+            {{ successMsg }}
+        </div>
+    </div>
+</div>
                         <a href="javascript:void(0)" class="close close-icon dt-sc-btn"></a></section>
                     <style>
                         .announcement-bar {
