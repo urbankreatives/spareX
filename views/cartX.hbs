@@ -3232,7 +3232,7 @@ CONTACT US
 
 
                         <div class="cart_table">
-                            <form action="/cart" method="post" novalidate class="cart dt-sc-column two-third-one-third ">
+                            <form  novalidate class="cart dt-sc-column two-third-one-third ">
                                 <div class="cart__items">
 
 
@@ -3348,7 +3348,7 @@ CONTACT US
 
                                           <div class="cart_btn">
      
-                                                             <a   href="/paynow" class="checkout-button button alt wc-forward">
+                                                             <a   href="/paynow" class="checkout-button button alt ">
 	 paynow</a>
 
                                                                
@@ -3620,29 +3620,14 @@ CONTACT US
                                         </div>
 
 
-                                        <script id="shipping-calculator-response-template" type="text/template">
-
-                                            <p id="shipping-rates-feedback" {{#if success}} class="success" {{else}} class="error" {{/if}}>
-                                                {{#if success}} {{#if rates}} {{#rates}} {{#if @first}} Rates start at {{formatPrice price}}. {{/if}} {{/rates}} {{else}} We do not ship to this destination. {{/if}} {{else}} {{ errorFeedback }} {{/if}}
-                                            </p>
-
-                                        </script>
+                                      
 
                                         <!--[if lte IE 8]>
 <style> #shipping-calculator { display: none; } </style>
 <![endif]-->
 
 
-                                        <script>
-                                            var theme = {
-                                                strings: {
-                                                    shippingCalcSubmitButton: "Calculate shipping",
-                                                    shippingCalcSubmitButtonDisabled: "Calculating...",
-
-                                                    shippingCalcMoneyFormat: "Rs. {{amount}}"
-                                                }
-                                            }
-                                        </script>
+                                      
                                         <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
                                         <script src="/services/javascripts/countries.js"></script>
                                         <script src="//cdn.shopify.com/shopifycloud/shopify/assets/themes_support/shopify_common-8ea6ac3faf357236a97f5de749df4da6e8436ca107bc3a4ee805cbf08bc47392.js" defer="defer"></script>

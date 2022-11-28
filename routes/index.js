@@ -142,7 +142,7 @@ router.post('/checkout',isLoggedIn,  function(req, res, next) {
        
             console.log(err.message)
             console.log(req.body.slot,'ma1')
-            return res.redirect('/');
+            return res.redirect('/cart');
         }
         var order = new Order({
          
